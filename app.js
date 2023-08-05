@@ -24,7 +24,7 @@ connection.connect()
 app.use(cors({ origin: "*", }));
 
 // INICIALIZE NODE SERVER
-app.listen(3306, () => {
+app.listen(10000, () => {
     console.info(`Server working!`)
 });
 
