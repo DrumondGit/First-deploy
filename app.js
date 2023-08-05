@@ -30,7 +30,7 @@ connection.query("SELECT 1+1 AS solution", (err, rows, fields) => {
 app.use(cors({ origin: "*", }));
 
 // INICIALIZE NODE SERVER
-app.listen(3030, () => {
+app.listen(5050, () => {
     console.info(`Server working!`)
 });
 
