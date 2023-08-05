@@ -2,7 +2,7 @@
   "name": "nodejslearning",
   "version": "1.0.0",
   "description": "Learning NodeJS SetUp",
-  "main": "index.js",
+  "main": "app.js",
   "engines": {
     "node": "18"
   },
@@ -19,6 +19,7 @@
     "mysql": "^2.18.1"
   },
   "devDependencies": {
+    "nodemon": "^3.0.1"
   },
   "keywords": []
 }
