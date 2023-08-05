@@ -6,7 +6,7 @@ async function cadastrar(event) {
     const elogio = document.getElementById("elogio").value
     console.log(elogio)
 
-    const url = `http://localhost:3303/cadastro`
+    const url = `http://localhost:3306/cadastro`
 
     var resp = await fetch(url, {
         method: "POST",

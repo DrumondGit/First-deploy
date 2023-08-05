@@ -4,6 +4,7 @@ const mysql = require("mysql")
 const cors = require("cors")
 
 const app = express()
+const PORT = 3000;
 app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 app.use(cors())
@@ -30,10 +31,10 @@ connection.query("SELECT 1+1 AS solution", (err, rows, fields) => {
 app.use(cors({ origin: "*", }));
 
 // INICIALIZE NODE SERVER
-app.listen(5050, () => {
-    console.info(`Server working!`)
-});
-
+app.listen(PORT, function(err) {
+  if (err) console.log("Error in server setup")
+  console.log("Server listening on Port", PORT);
+})
 
 // ROTES
 app.post("/cadastro", function (req, res) {
