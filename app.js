@@ -26,10 +26,10 @@ connection.connect()
 app.use(cors({ origin: "*", }));
 
 // INICIALIZE NODE SERVER
-app.listen(PORT, () => {
-    console.info(`Server working!`)
-});
-
+app.listen({
+  host: '0.0.0.0',
+  port: process.env.PORT ? Number(process.env.PORT) : 3333,
+})
 
 // ROTES
 app.post("/cadastro", function (req, res) {
